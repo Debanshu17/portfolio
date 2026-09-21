@@ -22,10 +22,10 @@ export const profile = {
   resumeName: 'DebanshuPanda_Resume_2027.pdf',
   /** Hero intro — condensed from the resume's "About Me". */
   intro:
-    'I build full-stack and AI-powered applications with Python, JavaScript, React and FastAPI, on a foundation of data structures, object-oriented programming and computer networking.',
+    'I build full-stack and AI-powered applications with Python, React and FastAPI, on a foundation of data structures, object-oriented programming and computer networking.',
   /** Full "About Me" text from the resume. */
   about:
-    'Electrical Engineering undergraduate and aspiring software developer with hands-on experience building full-stack and AI-powered applications using Python, JavaScript, React, FastAPI, and REST APIs. Strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and Computer Networking, with additional exposure to SAP ABAP Cloud through an industry internship. Eager to contribute to real-world software projects and grow as a developer.',
+    'Electrical Engineering undergraduate and aspiring software developer with hands-on experience building full-stack and AI-powered applications using Python, React, FastAPI, and REST APIs. Strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and Computer Networking, with additional exposure to SAP ABAP Cloud through an industry internship. Eager to contribute to real-world software projects and grow as a developer.',
 }
 
 export const navItems = [
@@ -173,7 +173,7 @@ export const projects: {
 
 /** Skills exactly as listed in the resume, grouped for display. No levels or scores. */
 export const skillGroups = [
-  { id: 'lang', title: 'Languages', items: ['Python', 'JavaScript'] },
+  { id: 'lang', title: 'Languages', items: ['Python'] },
   { id: 'web', title: 'Web & APIs', items: ['React', 'FastAPI', 'REST API'] },
   { id: 'ai', title: 'AI', items: ['Gemini AI/LLM'] },
   { id: 'cs', title: 'Computer science', items: ['Data Structures & Algorithms', 'OOP'] },
