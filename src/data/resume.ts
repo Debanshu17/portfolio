@@ -1,6 +1,6 @@
 /**
  * Single source of truth for the site. Everything here comes from
- * DebanshuPanda_Resume_2027.pdf — nothing is added, rounded up or embellished.
+ * the latest resume — nothing is added, rounded up or embellished.
  * Edit this file (and swap the PDF in /public) to update the whole site.
  */
 
@@ -22,10 +22,10 @@ export const profile = {
   resumeName: 'DebanshuPanda_Resume_2027.pdf',
   /** Hero intro — condensed from the resume's "About Me". */
   intro:
-    'I build full-stack and AI-powered applications with Python, React and FastAPI, on a foundation of data structures, object-oriented programming and computer networking.',
+    'I build Python-based applications and AI-powered solutions using Retrieval-Augmented Generation (RAG), on a foundation of data structures, OOP, networking, and SAP ABAP Cloud.',
   /** Full "About Me" text from the resume. */
   about:
-    'Electrical Engineering undergraduate and aspiring software developer with hands-on experience building full-stack and AI-powered applications using Python, React, FastAPI, and REST APIs. Strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and Computer Networking, with additional exposure to SAP ABAP Cloud through an industry internship. Eager to contribute to real-world software projects and grow as a developer.',
+    'Electrical Engineering undergraduate with hands-on experience developing Python-based applications and AI-powered solutions using Retrieval-Augmented Generation (RAG). Strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and computer networking (TCP/IP), with knowledge of SAP ABAP Cloud and SAP S/4HANA. Interested in software development, problem-solving, and building practical technology solutions.',
 }
 
 export const navItems = [
@@ -44,7 +44,7 @@ export const highlights = [
   {
     id: 'focus',
     title: 'Professional focus',
-    body: 'Full-stack and AI-powered applications built with Python, JavaScript, React, FastAPI and REST APIs.',
+    body: 'Python-based applications and AI-powered solutions developed using Retrieval-Augmented Generation (RAG), React, and FastAPI.',
     span: 'md:col-span-4',
     icon: 'code',
   },
@@ -58,21 +58,21 @@ export const highlights = [
   {
     id: 'foundations',
     title: 'Foundations',
-    body: 'Strong foundation in Data Structures & Algorithms, Object-Oriented Programming and Computer Networking.',
+    body: 'Strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and Computer Networking (TCP/IP).',
     span: 'md:col-span-2',
     icon: 'nodes',
   },
   {
     id: 'industry',
     title: 'Industry exposure',
-    body: 'SAP ABAP Cloud internship covering S/4HANA architecture and Clean Core principles.',
+    body: 'SAP ABAP Cloud internship covering S/4HANA architecture, cloud programming, and Clean Core principles.',
     span: 'md:col-span-2',
     icon: 'layers',
   },
   {
     id: 'direction',
     title: 'Career direction',
-    body: 'Eager to contribute to real-world software projects and grow as a developer.',
+    body: 'Interested in software development, problem-solving, and building practical technology solutions.',
     span: 'md:col-span-2',
     icon: 'arrow',
   },
@@ -86,7 +86,7 @@ export const highlights = [
   {
     id: 'beyond',
     title: 'Beyond code',
-    body: 'Photography, video editing, travelling and content creation.',
+    body: 'Photography, video editing, travelling, and content creation.',
     span: 'md:col-span-3',
     icon: 'lens',
   },
@@ -117,7 +117,7 @@ export const experience = [
   },
 ]
 
-export type ProjectVisual = 'analyzer' | 'network' | 'chat'
+export type ProjectVisual = 'analyzer' | 'network' | 'chat' | 'lab'
 
 export const projects: {
   id: string
@@ -133,7 +133,7 @@ export const projects: {
     name: 'AI Resume Analyzer',
     visual: 'analyzer',
     summary:
-      'Compares a resume against a job description with Gemini and returns an ATS score with improvement suggestions.',
+      'Compares a resume against a job description with Gemini and returns an ATS score with real-time scoring and improvement suggestions.',
     tech: ['React', 'FastAPI', 'Google Gemini AI', 'PyMuPDF'],
     points: [
       'Built an AI resume analyzer using Gemini to compare resumes with job descriptions and generate ATS scores.',
@@ -156,27 +156,41 @@ export const projects: {
     ],
   },
   {
-    id: 'ai-chatbot',
-    name: 'AI Chatbot',
+    id: 'bmw-ai-chatbot',
+    name: 'BMW AI Chatbot',
     visual: 'chat',
     summary:
-      'A serverless Gemini chatbot with multi-session memory and context-aware responses, running entirely in the browser.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Gemini AI', 'LocalStorage'],
+      'A RAG chatbot over BMW M guides with in-corpus accuracy of 100%, 0.72 similarity gating, and an automated 30-test evaluation harness.',
+    tech: ['Python', 'FastAPI', 'Google Gemini', 'RAG'],
     points: [
-      'Built a serverless Gemini chatbot with multi-session memory and context-aware responses.',
-      'Used browser LocalStorage to persist conversation history across sessions without a backend database.',
-      'Designed a responsive, lightweight UI with HTML, CSS, and JavaScript for smooth client-side interaction.',
+      'Built a RAG chatbot over BMW M guides; in-corpus accuracy rose from 53.3% to 100% vs. a closed-book baseline.',
+      'Added a 0.72 similarity gate and citation validator, cutting out-of-scope hallucinations from 8/10 to 0/10.',
+      'Built a 30-test evaluation harness with cost tracking that rejects invalid runs and exposed three bugs.',
     ],
-    demo: 'https://debanshu17.github.io/bmw-ai-chatbot/',
+    demo: 'https://bmw-ai-chatbot-v2.onrender.com',
+  },
+  {
+    id: 'ai-lab-report-explainer',
+    name: 'AI Lab Report Explainer',
+    visual: 'lab',
+    summary:
+      'PDF-based lab report analyzer extracting test values and ranges with English/Hindi explanations, deterministic classification, and safety guardrails.',
+    tech: ['Python', 'FastAPI', 'RAG', 'React'],
+    points: [
+      'Built a PDF-based lab report analyzer to extract test names, values, units, and reference ranges using Python.',
+      'Achieved 97.12% extraction precision and 93.31% flagging agreement across 239 labelled rows from four reports.',
+      'Integrated knowledge-base-driven English/Hindi explanations, deterministic result classification, and safety guardrails against diagnosis and medication recommendations.',
+    ],
+    demo: 'https://debanshu17.github.io/ai-lab-report-explainer/',
   },
 ]
 
 /** Skills exactly as listed in the resume, grouped for display. No levels or scores. */
 export const skillGroups = [
+  { id: 'ai', title: 'AI & Machine Learning', items: ['RAG', 'Gemini AI/LLM'] },
   { id: 'lang', title: 'Languages', items: ['Python'] },
   { id: 'web', title: 'Web & APIs', items: ['React', 'FastAPI', 'REST API'] },
-  { id: 'ai', title: 'AI', items: ['Gemini AI/LLM'] },
-  { id: 'cs', title: 'Computer science', items: ['Data Structures & Algorithms', 'OOP'] },
+  { id: 'cs', title: 'Computer Science', items: ['Data Structures & Algorithms', 'OOP'] },
   { id: 'net', title: 'Networking', items: ['Networking (TCP/IP)'] },
   { id: 'sap', title: 'SAP', items: ['ABAP Cloud', 'SAP S/4HANA'] },
 ]

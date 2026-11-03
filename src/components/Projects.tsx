@@ -93,10 +93,54 @@ function ChatVisual() {
   )
 }
 
+function LabVisual() {
+  return (
+    <div className="absolute inset-0 [transform-style:preserve-3d]">
+      <div className="absolute left-[10%] top-[12%] h-[74%] w-[48%] rounded-xl border border-white/12 bg-white/[0.05] p-4" style={layer(20)}>
+        <div className="mb-3 flex items-center justify-between border-b border-white/10 pb-2">
+          <span className="block h-2 w-16 rounded-full bg-white/25" />
+          <span className="h-1.5 w-6 rounded-full bg-signal/40" />
+        </div>
+        {[
+          { w: 65, flag: false },
+          { w: 80, flag: true },
+          { w: 55, flag: false },
+          { w: 70, flag: false },
+          { w: 60, flag: true },
+        ].map((row, i) => (
+          <div key={i} className="mb-2.5 flex items-center justify-between">
+            <span className="block h-1.5 rounded-full bg-white/15" style={{ width: `${row.w}%` }} />
+            <span className={`block h-1.5 w-3 rounded-full ${row.flag ? 'bg-[#ffbf66]/70' : 'bg-signal/40'}`} />
+          </div>
+        ))}
+      </div>
+      <div
+        className="absolute left-[42%] top-[28%] h-[58%] w-[48%] rounded-xl border border-signal/30 bg-[#0c121e]/90 p-4 shadow-[0_20px_50px_-20px_rgba(61,120,216,0.6)] backdrop-blur-sm"
+        style={layer(50)}
+      >
+        <div className="mb-2 flex items-center gap-2">
+          <span className="h-2 w-2 rounded-full bg-spark shadow-[0_0_8px_var(--color-spark)]" />
+          <span className="block h-1.5 w-20 rounded-full bg-signal/50" />
+        </div>
+        <div className="mt-3 space-y-2">
+          <span className="block h-1.5 w-full rounded-full bg-white/20" />
+          <span className="block h-1.5 w-[85%] rounded-full bg-white/15" />
+          <span className="block h-1.5 w-[70%] rounded-full bg-signal/30" />
+        </div>
+        <div className="mt-4 flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.04] px-2.5 py-1.5">
+          <span className="h-1.5 w-1.5 rounded-full bg-signal" />
+          <span className="block h-1.5 w-16 rounded-full bg-white/30" />
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const visuals: Record<ProjectVisual, ComponentType> = {
   analyzer: AnalyzerVisual,
   network: NetworkVisual,
   chat: ChatVisual,
+  lab: LabVisual,
 }
 
 function ProjectCard({ p }: { p: (typeof projects)[number] }) {
@@ -189,7 +233,7 @@ export function Projects() {
         <SectionHeading
           id="projects-title"
           title="Projects"
-          lead="Two AI applications built on Google Gemini, and a Python tool that automates Cisco device monitoring."
+          lead="AI-powered applications built with Gemini, RAG, and FastAPI, alongside Python network automation tools."
         />
         <div className="space-y-6 md:space-y-8">
           {projects.map((p) => (

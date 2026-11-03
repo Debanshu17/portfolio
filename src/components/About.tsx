@@ -11,7 +11,7 @@ export function About() {
         <SectionHeading
           id="about-title"
           title="About"
-          lead="An Electrical Engineering undergraduate and aspiring software developer, building full-stack and AI-powered applications."
+          lead="Electrical Engineering undergraduate developing Python-based applications and AI-powered solutions with RAG."
         />
         <div className="grid gap-4 md:grid-cols-6">
           {highlights.map((h, i) => (
