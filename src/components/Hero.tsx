@@ -186,17 +186,24 @@ export function Hero({ ready }: { ready: boolean }) {
             </span>
           </h1>
 
-          <motion.p
-            className="mt-8 max-w-xl text-xl font-medium leading-snug text-mist md:text-[1.6rem]"
+          <motion.div
+            className="mt-8 max-w-xl"
             custom={0.55}
             variants={rise}
             initial={initial}
             animate={state}
           >
-            {profile.title}
-          </motion.p>
+            <p className="text-xl font-medium leading-snug text-mist md:text-[1.6rem]">
+              {profile.title}
+            </p>
+            {profile.tagline && (
+              <p className="mt-2 text-base font-normal text-signal md:text-lg">
+                {profile.tagline}
+              </p>
+            )}
+          </motion.div>
           <motion.p
-            className="mt-5 max-w-lg text-base text-dim md:text-lg"
+            className="mt-5 max-w-lg text-base leading-relaxed text-dim md:text-lg"
             custom={0.68}
             variants={rise}
             initial={initial}

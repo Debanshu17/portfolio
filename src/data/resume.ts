@@ -10,7 +10,8 @@ export const profile = {
   name: 'Debanshu Panda',
   firstName: 'Debanshu',
   lastName: 'Panda',
-  title: 'Electrical Engineering undergraduate & aspiring software developer',
+  title: 'Electrical Engineering Student | Software Developer',
+  tagline: 'Building Python-Based Applications and AI-Powered Solutions',
   location: 'Jajpur Road, Odisha',
   email: 'debanshupanda2003@gmail.com',
   phone: '+91-6371324303',
@@ -22,7 +23,7 @@ export const profile = {
   resumeName: 'DebanshuPanda_Resume_2027.pdf',
   /** Hero intro — condensed from the resume's "About Me". */
   intro:
-    'I build Python-based applications and AI-powered solutions using Retrieval-Augmented Generation (RAG), on a foundation of data structures, OOP, networking, and SAP ABAP Cloud.',
+    'I develop practical software solutions using Python and Retrieval-Augmented Generation (RAG). With a foundation in Data Structures & Algorithms, OOP, computer networking, and SAP technologies, I enjoy turning ideas into useful applications and exploring new technologies.',
   /** Full "About Me" text from the resume. */
   about:
     'Electrical Engineering undergraduate with hands-on experience developing Python-based applications and AI-powered solutions using Retrieval-Augmented Generation (RAG). Strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and computer networking (TCP/IP), with knowledge of SAP ABAP Cloud and SAP S/4HANA. Interested in software development, problem-solving, and building practical technology solutions.',
