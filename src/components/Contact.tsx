@@ -6,7 +6,7 @@ import { Reveal } from './Reveal'
 const rows = [
   { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, external: false },
   { label: 'Phone', value: profile.phone, href: profile.phoneHref, external: false },
-  { label: 'LinkedIn', value: 'in/debanshu-panda-0b1109413', href: profile.linkedin, external: true },
+  { label: 'LinkedIn', value: 'linkedin.com/in/debanshu-panda', href: profile.linkedin, external: true },
   { label: 'GitHub', value: `github.com/${profile.githubHandle}`, href: profile.github, external: true },
 ]
 
@@ -27,7 +27,7 @@ export function Contact() {
             Let&rsquo;s build something meaningful.
           </h2>
           <p className="mt-7 max-w-lg text-lg text-dim">
-            I&rsquo;m eager to contribute to real-world software projects and grow as a developer. Get in touch, or take a look at my resume.
+            I am eager to contribute to real-world engineering teams and collaborate on practical software solutions. Reach out directly or review my resume.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Magnetic>
@@ -35,7 +35,7 @@ export function Contact() {
                 href={`mailto:${profile.email}`}
                 className="inline-flex w-full items-center justify-center rounded-full bg-mist px-7 py-3.5 text-[0.95rem] font-semibold text-ink shadow-[0_0_40px_-8px_rgba(127,178,255,0.65)] transition-transform hover:scale-[1.03] sm:w-auto"
               >
-                Email me
+                Email Me
               </a>
             </Magnetic>
             <Magnetic>
@@ -45,7 +45,7 @@ export function Contact() {
                 className="glass inline-flex w-full items-center justify-center gap-2 rounded-full px-7 py-3.5 text-[0.95rem] font-semibold text-mist transition-colors hover:bg-white/10 sm:w-auto"
               >
                 <DownloadIcon />
-                Download resume
+                Download Resume
               </a>
             </Magnetic>
           </div>
@@ -78,8 +78,8 @@ export function Contact() {
         </Reveal>
 
         <footer className="mt-24 flex flex-col justify-between gap-3 border-t border-white/8 pt-8 text-sm text-faint sm:flex-row md:mt-32">
-          <p>&copy; {new Date().getFullYear()} {profile.name}</p>
-          <p>Built with React, Three.js and Framer Motion.</p>
+          <p>&copy; {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
+          <p>Built with React, Three.js, and Tailwind CSS.</p>
         </footer>
       </div>
     </section>

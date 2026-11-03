@@ -10,8 +10,8 @@ export function About() {
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <SectionHeading
           id="about-title"
-          title="About"
-          lead="Electrical Engineering undergraduate developing Python-based applications and AI-powered solutions with RAG."
+          title="About Me"
+          lead="Electrical Engineering undergraduate focused on building practical, high-performance software with Python, modern AI architectures, and clean engineering practices."
         />
         <div className="grid gap-4 md:grid-cols-6">
           {highlights.map((h, i) => (

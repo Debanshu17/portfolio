@@ -17,7 +17,7 @@ export function Experience() {
         <SectionHeading
           id="experience-title"
           title="Experience"
-          lead="Two internships: SAP ABAP Cloud development, and power systems at HAL."
+          lead="Hands-on industry internships in SAP ABAP Cloud development and industrial electrical power systems at HAL Koraput."
         />
 
         <div ref={ref} className="relative">

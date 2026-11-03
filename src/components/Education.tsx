@@ -11,7 +11,7 @@ export function Education() {
         <SectionHeading
           id="education-title"
           title="Education"
-          lead="Electrical Engineering at OUTR, and certifications in SAP, networking, Python, cloud and AI."
+          lead="Academic foundation in Electrical Engineering at OUTR, complemented by industry credentials in SAP, networking, Python, and cloud computing."
         />
 
         <div className="grid gap-4 md:grid-cols-6">
@@ -40,7 +40,7 @@ export function Education() {
             <h3 id="certifications-title" className="font-display text-[clamp(1.8rem,4vw,2.6rem)] font-semibold leading-tight tracking-[-0.025em] text-mist">
               Certifications
             </h3>
-            <p className="mt-3 text-dim">Each item links to the certificate.</p>
+            <p className="mt-3 text-dim">Select any credential to view the certificate or official verification.</p>
           </Reveal>
           <div className="grid gap-4 md:grid-cols-2" aria-labelledby="certifications-title" role="group">
             {certifications.map((c, i) => (

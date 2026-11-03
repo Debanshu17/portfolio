@@ -224,7 +224,7 @@ export function Hero({ ready }: { ready: boolean }) {
                 href="#projects"
                 className="inline-flex w-full items-center justify-center rounded-full bg-mist px-7 py-3.5 text-[0.95rem] font-semibold text-ink shadow-[0_0_40px_-8px_rgba(127,178,255,0.65)] transition-transform hover:scale-[1.03] sm:w-auto"
               >
-                View my work
+                View My Work
               </a>
             </Magnetic>
             <Magnetic>
@@ -234,7 +234,7 @@ export function Hero({ ready }: { ready: boolean }) {
                 className="glass inline-flex w-full items-center justify-center gap-2 rounded-full px-7 py-3.5 text-[0.95rem] font-semibold text-mist transition-colors hover:bg-white/10 sm:w-auto"
               >
                 <DownloadIcon />
-                Download resume
+                Download Resume
               </a>
             </Magnetic>
           </motion.div>

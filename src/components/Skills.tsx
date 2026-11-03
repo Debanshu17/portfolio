@@ -10,8 +10,8 @@ export function Skills() {
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <SectionHeading
           id="skills-title"
-          title="Skills"
-          lead="The technical skills listed on my resume, grouped by area."
+          title="Technical Skills"
+          lead="Core competencies across programming languages, AI engineering, web frameworks, and enterprise technologies."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((g, gi) => (

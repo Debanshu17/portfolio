@@ -178,7 +178,7 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full bg-mist px-5 py-2.5 text-sm font-semibold text-ink transition-transform hover:scale-[1.03]"
                   >
-                    Live demo
+                    Live Demo
                     <ArrowUpRight />
                     <span className="sr-only"> (opens in a new tab)</span>
                   </a>
@@ -191,7 +191,7 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
                 onClick={() => setOpen((v) => !v)}
                 className="inline-flex items-center gap-2 rounded-full border border-white/12 px-5 py-2.5 text-sm font-semibold text-mist transition-colors hover:bg-white/[0.06]"
               >
-                {open ? 'Hide details' : 'What I built'}
+                {open ? 'Hide Details' : 'What I Built'}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className={`transition-transform duration-300 ${open ? 'rotate-180' : ''}`}>
                   <path d="m6 9 6 6 6-6" />
                 </svg>
@@ -233,7 +233,7 @@ export function Projects() {
         <SectionHeading
           id="projects-title"
           title="Projects"
-          lead="AI-powered applications built with Gemini, RAG, and FastAPI, alongside Python network automation tools."
+          lead="Featured software applications spanning Retrieval-Augmented Generation (RAG), document intelligence, and network automation."
         />
         <div className="space-y-6 md:space-y-8">
           {projects.map((p) => (
